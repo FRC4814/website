@@ -4801,7 +4801,7 @@ th.hide-for-touch {
     height: 50px; }
 
 nav {
-  background-color: white; }
+  background-color: transparent; }
   nav ul {
     list-style: none; }
     nav ul li {
