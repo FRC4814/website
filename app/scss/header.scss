@@ -1,7 +1,7 @@
 /* ==========================================================================
    Header
    ========================================================================== */
-#top-bar{
+header{
 	position: relative;
 	height: 60px;
 	padding: 5px;
@@ -12,18 +12,18 @@
 }
 
 nav{
-	background-color: transparent;
 	ul{
+		height:50px;
 		list-style: none;
 		li{
-			padding: 40px 20px 40px 0px;
+			padding: 12.5px 20px 12.5px 0px;
 			float: left;
 			a{
 				color: #000;
 				font-weight: 800;
 				&:hover{
-					color: rgb(141, 141, 141);
-					text-decoration: underline;
+					color: #000;
+					font-weight:900;
 				}
 			}
 		}

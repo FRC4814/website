@@ -28,6 +28,14 @@ module.exports = function(grunt) {
 			]
 		},
 
+		uncss: {
+			dist: {
+				files: {
+					'app/css/app.css': ['app/index.html']
+				}
+			}
+		},
+
 		clean: {
 			dist: {
 				src: ['dist/*']
@@ -128,11 +136,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-usemin');
+	grunt.loadNpmTasks('grunt-uncss');
 
 	grunt.registerTask('build', ['sass']);
 	grunt.registerTask('default', ['build', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
-	grunt.registerTask('publish', ['clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'usemin']);
+	grunt.registerTask('publish', ['clean:dist', 'validate-js', 'uncss', 'useminPrepare', 'copy:dist', 'usemin']);
 
 };
