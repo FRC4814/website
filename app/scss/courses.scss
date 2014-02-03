@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Academy
+   ========================================================================== */
+
+#courses{
+   	.course{
+   		height: 200px;
+   		border: 1px solid red;
+   		background:#fff;
+   		overflow: hidden;
+   		background: #2051F9;
+   		h2.title{
+   			@include grid-column(3);
+   			color: #383838;
+   			font-size: 2rem;
+   		}
+   		.video-slider{
+   			@include grid-column(9);
+   			background: #A8BBFD;
+   			margin-top: 40px;
+   			.arrow{
+   				float: left;
+   				position: absolute;
+   				width: 75px;
+   				height: 120px;
+   				font-size: 7.4em;
+   				z-index: 100;
+   				color: #fff;
+   				vertical-align: middle;
+   				&:before{
+   					height: 120px;
+   				}
+   				&.next{
+   				left: 10;
+   				&:before{
+   					content: "\f104";
+   				}
+	   			}
+	   			&.past{
+	   				right: 0;
+	   				&:before{
+	   					content: "\f105";
+	   				}
+	   			}
+   			}
+   			.slide{
+   				@include grid-column($columns:3,$offset:1);
+   				float: left;
+   				height: 120px;
+   				.thumbnail{
+   					height: 120px; /* Replaced by asset-transform in CMS */
+   				}
+   			}
+   		}
+   	}
+}
