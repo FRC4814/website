@@ -473,6 +473,16 @@ select {
   width: 100%;
   float: left; }
 
+.container {
+  margin-left: 13%;
+  margin-right: 13%;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;}
+
+.text-center {
+  text-align: center;}
+
 @media only screen {
   .column.small-centered, .columns.small-centered {
     position: relative;
