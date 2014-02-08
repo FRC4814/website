@@ -4862,29 +4862,49 @@ nav ul {
 /* ==========================================================================
    Academy
    ========================================================================== */
-#courses .course {
-  height: 200px;
+#hero .container {
+  position: relative; }
+  #hero .container .row {
+    overflow: hidden; }
+    #hero .container .row h1 {
+      font-size: 9em;
+      text-align: center;
+      position: relative;
+      z-index: 50; }
+    #hero .container .row img {
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      width: 100%; }
+
+#courses {
   border: 1px solid red;
   background: white;
   overflow: hidden;
   background: #2051f9; }
-  #courses .course h2.title {
+  #courses .course {
+    position: relative;
+    height: 200px; }
+  #courses .entitled {
+    position: relative;
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 25%;
-    float: left;
-    color: #383838;
-    font-size: 2rem; }
-  #courses .course .video-slider {
+    float: left; }
+  #courses h2.title {
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: center; }
+  #courses .video-slider {
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 75%;
     float: left;
     background: #a8bbfd;
-    margin-top: 40px; }
-    #courses .course .video-slider .arrow {
+    overflow: hidden; }
+    #courses .video-slider .arrow {
       float: left;
       position: absolute;
       width: 75px;
@@ -4893,25 +4913,26 @@ nav ul {
       z-index: 100;
       color: white;
       vertical-align: middle; }
-      #courses .course .video-slider .arrow:before {
+      #courses .video-slider .arrow:before {
         height: 120px; }
-      #courses .course .video-slider .arrow.next {
+      #courses .video-slider .arrow.next {
         left: 10; }
-        #courses .course .video-slider .arrow.next:before {
+        #courses .video-slider .arrow.next:before {
           content: "\f104"; }
-      #courses .course .video-slider .arrow.past {
+      #courses .video-slider .arrow.past {
         right: 0; }
-        #courses .course .video-slider .arrow.past:before {
+        #courses .video-slider .arrow.past:before {
           content: "\f105"; }
-    #courses .course .video-slider .slide {
+    #courses .video-slider .slide {
       position: relative;
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 25%;
-      margin-left: 8.33333% !important;
       float: left;
+      margin-left: 5.6%;
       float: left;
       height: 120px; }
-      #courses .course .video-slider .slide .thumbnail {
+      #courses .video-slider .slide .thumbnail {
         height: 120px;
-        /* Replaced by asset-transform in CMS */ }
+        /* Replaced by asset-transform in CMS */
+        color: black; }

@@ -5,7 +5,9 @@ var app = (function() {
 		docElem = document.documentElement;
 
 	// Load Slider
-	Flipsnap('.slideshow');
+	Flipsnap('.video-slideshow', {
+	    distance: 160
+	});
 
 	return {
 		publicFunction: function() {

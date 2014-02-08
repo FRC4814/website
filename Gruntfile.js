@@ -20,7 +20,8 @@ module.exports = function(grunt) {
 
 		jshint: {
 			options: {
-				jshintrc: '.jshintrc'
+				jshintrc: '.jshintrc',
+				ignores: ['app/js/flipsnap.min.js']
 			},
 			all: [
 				'Gruntfile.js',
